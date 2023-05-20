@@ -1,0 +1,107 @@
+ *{
+  margin: opx;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+ }
+ body{
+  background: rgb(235, 229, 222);
+
+
+ }
+ .heading{
+  text-align: center;
+  margin-top: 25px;
+  /* border-radius: ipx solid green; */
+ }
+ .heading h1{
+  font-size: 40px;
+  margin-bottom: 10px;
+ }
+ .heading p{
+  font-size: 20px;
+  margin-bottom: 50px;
+
+ }
+ .about-us{
+  display: flex;
+  align-items: center;
+  width: 85%;
+  margin: auto;
+ }
+ .about-us img{
+  flex: 0.5%;
+  max-width: 50%;
+  height: auto;
+ }
+ .mission{
+  padding: 35px;
+  
+ }
+ .mission h3{
+  font-size: 24px;
+  margin:15px 0 px;
+  color:rgb(7, 41, 37)
+ }
+ .mission p{
+  font-size: 18px;
+  margin:15px 0 px;
+  line-height: 1.5;
+  color:rgb(7, 41, 37)
+ }
+ .vision{
+  padding: 35px;
+  
+ }
+ .vision h3{
+  font-size: 24px;
+  margin:15px 0 px;
+  color:rgb(7, 41, 37)
+ }
+ .vision p{
+  font-size: 18px;
+  margin:15px 0 px;
+  line-height: 1.5;
+  color:rgb(7, 41, 37)
+ }
+ .goal{
+  padding: 35px;
+  
+ }
+ .goal h3{
+  font-size: 24px;
+  margin:15px 0 px;
+  color:rgb(7, 41, 37)
+ }
+ .goal p{
+  font-size: 18px;
+  margin:15px 0 px;
+  line-height: 1.5;
+  color:rgb(7, 41, 37)
+ }
+ @media(max-width:768px){
+  .about-us{
+    flex-direction: column;
+  }
+  .about-us img{
+    flex:0 100%;
+    max-width: 100%;
+
+  }
+  .mission{
+    flex:0 100;
+    max-width: 100%;
+    padding: 15px;
+  }
+  .vision{
+    flex:0 100;
+    max-width: 100%;
+    padding: 15px;
+  }
+  .goal{
+    flex:0 100;
+    max-width: 100%;
+    padding: 15px;
+  }
+ }
+ 

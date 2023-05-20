@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+  /* body{
+     background-image: url('image/8.jpg'); 
+     background-color: antiquewhite; 
+}   */
+.active, .nav-links ul li:hover{
+    background: greenyellow;
+    border-radius: 3px;
+}
+.about {
+    display: none;
+
+}
+.nav-links ul li:hover .about{
+    display: block;
+    position: absolute;
+    margin-top:15px ;
+    margin-left: -15px;
+    background:rgb(130, 190, 170) ;
+}
+.nav-links ul li:hover .about ul{
+    display: block;
+    margin: 15px;
+}
+.nav-links ul li:hover .about ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.nav-links ul li:hover .about ul li :last-child{
+    border-bottom: none;
+}
+.nav-links ul li:hover .about ul li a:hover{
+color: rgb(56, 51, 51);
+cursor: pointer;
+}
+.services {
+    display: none;
+
+}
+.nav-links ul li:hover .services{
+    display: block;
+    position: absolute;
+    margin-top:15px ;
+    margin-left: -15px;
+    background:rgb(130, 190, 170) ;
+}
+.nav-links ul li:hover .services ul{
+    display: block;
+    margin: 15px;
+}
+.nav-links ul li:hover .services ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.nav-links ul li:hover .services ul li :last-child{
+    border-bottom: none;
+}
+.nav-links ul li:hover .services ul li a:hover{
+color: rgb(56, 51, 51);
+cursor: pointer;
+}
+
+
+
+.Container{
+    width: 85%;
+    margin: 0 auto;
+}
+.nav{
+    width:100%;
+    background-color: rgb(130, 190, 170);
+    /* flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    padding:8px 12px;
+    position: relative;
+    display:inline-block;
+
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+
+}
+.nav-links ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li :hover::after{/*doesnt work*/
+    width:100%;
+
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+}
+.nav ul li{
+    /*1)top/bottom 2)left/right */
+    margin: 0 10px;
+
+}
+.nav ul li::after{
+    width: 0%;
+    content:'';
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav ul li:hover::after{
+    width: 100%;
+
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size:14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+} 
+.hero-btn:hover{
+    border: 1px solid black;
+     background-color:  rgb(130, 190, 170);
+     transition: 1s ;
+}
+.nav ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+.Hero{
+    padding-top: 30px;
+    
+}
+.Hero .Container{
+    display:flex;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col img{
+    max-width: 100%;
+    padding: 5% 0;
+}
+.hero-description{
+    text-align: center;
+}
+.hero-description p{
+    font-size: 19px;
+
+    
+}
+.hero-description a{
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 3px;
+  
+}
+.how-it-works{
+    background-color: antiquewhite; 
+    padding-bottom: 50px;
+}
+.how .how-it-works a{
+    text-decoration: none;
+}
+.how-it-works .container{
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+.card{
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+.card:hover{
+   background-color: rgb(130, 190, 170); 
+}
+.card i{
+    font-size: 45px;
+}
+.card > *{
+    margin:4px 0;
+}
+.main-spacing{
+    /* margin top and bottom, margin left and right*/
+    padding: 50px 0;
+}
+.why h1, .why p{
+    text-align: center;
+}
+.row-spacing{
+    width: 60%;
+    margin: 0 auto;
+}
+.contact{
+    color: black;
+     background-color: antiquewhite; 
+}
+.contact h1{
+    text-align: center;
+}
+.contact form{
+    width: 40%;
+    /*center a div*/
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    /*border width,type,color*/
+    border: 2px solid black;
+    padding: 40px;
+    border-radius: 15px;
+}
+.contact form input{
+    background-color: transparent;
+    border: 2px solid black;
+    margin: 10px 0;
+    font-size: 15px;
+    color: black;
+    outline: 0;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+.contact form input[type=submit]{
+   background-color: black;
+   color: white;
+   border: 0;
+   cursor: pointer;
+}
+.footer{
+    background-color: black;
+    color: white;
+}
+.footer p{
+    text-align: center;
+    font-weight: 700;
+}
+.homedrop,.header ul li:hover{
+    /*background:greenyellow;*/
+    border-radius: 3px;
+}
+.nav ul li a{
+    text-decoration: none;
+    
+}
+.about{
+    display: none;
+    
+}
+.nav ul li hover .about{
+    display: block;
+    position:absolute;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+nav ul li hover .about ul
+{
+    display: block;
+}
+.main-spacing{
+    text-align: center;
+    font-weight: 700;
+}
+.nav .fa{
+    display: none;
+}
+@media(max-width:700px){ /*smaller devices*/
+    .nav-links ul li{
+        display: block;
+    } 
+    .nav-links{
+        position: absolute;
+        background:turquoise;
+        height: 100vh;
+        width: 200px;
+        top:0;
+        right: -200px;
+        text-align: left;
+        transition: 1s; 
+    } 
+    .nav .fa{
+        display: block;
+        margin: 10px;
+        color: #fff;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
