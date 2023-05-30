@@ -3,18 +3,15 @@
     padding:0;
     box-sizing: border-box;
 }
-  /* body{
-     background-image: url('image/8.jpg'); 
-     background-color: antiquewhite; 
-} */  
+    
 .active, .nav-links ul li:hover{
     background: greenyellow;
     border-radius: 3px;
 }
-.about {
+/* .about {
     display: none;
 
-}
+} 
 .nav-links ul li:hover .about{
     display: block;
     position: absolute;
@@ -39,12 +36,12 @@
 }
 .nav-links ul li:hover .about ul li a:hover{
 color: rgb(56, 51, 51);
-cursor: pointer;
-}
-.services {
+cursor: pointer;} 
+
+ .services {
     display: none;
 
-}
+} 
 .nav-links ul li:hover .services{
     display: block;
     position: absolute;
@@ -70,7 +67,7 @@ cursor: pointer;
 .nav-links ul li:hover .services ul li a:hover{
 color: rgb(56, 51, 51);
 cursor: pointer;
-}
+} */
 
 
 
@@ -167,14 +164,7 @@ cursor: pointer;
     display:flex;
     align-items: center;
 }
-.col{
-    flex-basis: 50%;
-    min-width: 300px;
-}
-.col img{
-    max-width: 100%;
-    padding: 5% 0;
-}
+
 .hero-description{
     text-align: center;
 }
@@ -207,18 +197,18 @@ cursor: pointer;
     justify-content: space-evenly;
     margin: 20px 0;
 }
-.card{
+.cardi{
     background-color: white;
     padding: 40px 20px;
     border-radius: 10px;
 }
-.card:hover{
+.cardi:hover{
    background-color: rgb(130, 190, 170); 
 }
-.card i{
+.cardi i{
     font-size: 45px;
 }
-.card > *{
+.cardi > *{
     margin:4px 0;
 }
 .main-spacing{

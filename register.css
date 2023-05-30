@@ -1,6 +1,5 @@
 body{
-    /* background-image: url(image/8.jpg); */
-    background-color: antiquewhite;
+   background-color: antiquewhite;
 }
 .contact{
     color: black;
@@ -16,7 +15,6 @@ body{
     display: flex;
     flex-direction: column;
     margin-top: 40px;
-    /*border width,type,color*/
     border: 2px solid black;
     padding: 40px;
     border-radius: 15px;

@@ -5,9 +5,9 @@
     font-family: sans-serif;
 }
 body{
-    width: 100%;
-    background-color: rgb(236, 220, 201);
-}
+    background-color: antiquewhite;
+    }
+    
 .title h1{
     text-align: center;
     padding-top: 50px;
@@ -30,7 +30,7 @@ body{
     margin: 75px auto;
     text-align: center;
 }
-.card{
+.cards{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -42,32 +42,32 @@ body{
     border-radius: 10px;
     cursor: pointer;
 }
-.card h2{
+.cards h2{
     font-size: 28px;
     margin-bottom: 20px;
 
 }
-.card p{
+.cards p{
     font-size: 17px;
     margin-bottom: 30px;
     line-height: 1.5;
 
 }
-.card:hover{
+.cards:hover{
     background-color: white;
 }
-.button{
+/* .button{
     font-size: 15px;
     text-decoration: none;
     color: blue;
     padding: 8px 12px; 
     border-radius: 5px;
-    /* letter-spacing: 1px; */
+     letter-spacing: 1px; 
 }
 .button:hover{
     background-color: rgb(120, 192, 188);
     transition: 0.4s;
-}
+} */
 @media screen and(max-width:940px) {
     .services
 
@@ -76,7 +76,7 @@ body{
     flex-direction: column;
 
 }
-.card{
+.cards{
     width: 85%;
     display: flex;
     margin: 20px 0px;

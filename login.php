@@ -1,43 +1,33 @@
 <?php
-require 'config.php';
+include 'includes/form_handler/login_handler.php';
 
-if(isset($_POST["login"])) {
-    // input details, no empty fields allowed
-    $email = $_POST["email"];
-    $password = $_POST["password"];
-    
-    $result = "SELECT * FROM client WHERE email = '$email' AND password = '$password'";
-    $query = mysqli_query($conn, $result);
-    
-    if(mysqli_num_rows($query) == 1) {
-        // user has successfully logged in, set session variables and redirect to index.php
-        $row = mysqli_fetch_assoc($query);
-        $_SESSION['id'] = $row['id'];
-        $_SESSION['name'] = $row['name'];
-        header("Location: welcome.php");
-    } else {
-        // invalid login credentials
-        echo "Invalid email or password!";
-    }
-}
 ?>
-
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <!-- <link href="login.css" rel="stylesheet" type ="text/css"> -->
+    <link rel="stylesheet" type="text/css" href="Assets/style.css">
 </head>
 <body>
-    <h2>Login</h2> 
-    <form class="" action="login.php" method="post" autocomplete="off">
-        <input type="text" placeholder="Full name"/>
-        <label for="name">Email address:</label>
-        <input type="email" name="email" id="email" required value=""><br>
-        <label for="password">Password:</label>
-        <input type="password" name="password" id="password" required value="">
-        <button type="submit" name="login">Login</button>
-    </form>
-    <a href="register.php">Registration</a>
+    <div class="contact main-spacing"> 
+        <div class="container"></div>
+        <h1>Login</h1>
+        <form action="login.php" method="POST">
+            <input type="email" name="email" placeholder="Email address" required/>
+            <input type="password" name="password" placeholder="Password" required/>
+            <input type="submit" name="submit" value="Login"/>
+            <br>
+            <?php
+            if (in_array("<span style='color: red;'>Email or Password was Incorrect</span><br>", $error_array)){
+                echo "<span style='color: red;'>Email or Password was Incorrect</span><br>";
+            }
+            
+            ?>
+        </form>
+    </div>
 </body>
 </html>
