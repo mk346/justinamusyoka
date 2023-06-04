@@ -79,7 +79,7 @@
   position: relative;
   display: block;
   min-width: 60px;
-  height: 60px;
+  height: 40px;
   line-height: 70px;
   text-align: center;
 }
@@ -827,7 +827,7 @@ cursor: pointer;
 
 
 .Container{
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
 }
 .nav{
@@ -1213,9 +1213,122 @@ body{
 }
 }
 
+/* Client Dashboard */
+.page-title{
+  margin-left: 20px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 25px;
+}
+.line{
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  font-size: 50px;
+  margin-left: 20px;
+  margin-right: auto;
+}
 
-
-
+.table-container{
+  width: 100%;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 75px;
+}
+.mycol{
+  position: relative;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 100%;
+}
+.card-1{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+  box-shadow: 0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0, 0, 0, .2);
+  margin-bottom: 1rem;
+}
+.card-primary.card-outline{
+  border-top: 3px solid #720026;
+}
+.card-header-1{
+  background-color: transparent;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  padding: 0.75rem 1.25rem;
+  position: relative;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  margin-bottom: 0;
+}
+.card-header-1 > .card-item{
+  float: right;
+  margin-right: -0.625rem;
+}
+.addbtn{
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 0.25rem 0.5rem;
+  border-width: 1px;
+  box-shadow: none;
+  background-color: #c5c7c9;
+  color: #444;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-color: #720026;
+  user-select: none;
+  transition: color .15s ease-in-out, 
+    background-color .15s ease-in-out, 
+    border-color .15s ease-in-out;
+}
+.card-body-1{
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+.mini-wrapper{
+  width: 100%;
+}
+.row-1{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.table-col{
+  position: relative;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.mytable{
+  width: 100%;
+  border-spacing: 0;
+}
+.rhead:first-child, .rbody:first-child{
+  border-left: 1px solid #dee2e6;
+}
+.rhead, .rbody{
+  text-align: center;
+  padding: 15px;
+  border-bottom: 1px solid #dee2e6;
+  border-top: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+}
 
 
 

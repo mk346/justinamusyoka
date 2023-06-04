@@ -9,7 +9,7 @@
         </a>
         </li>
         <li>
-        <a href="#">
+        <a href="adminn.php">
             <span class="icon"
             ><ion-icon name="home-outline"></ion-icon
             ></span>
@@ -25,7 +25,7 @@
         </a>
         </li>
         <li>
-        <a href="#">
+        <a href="pricelist.php">
             <span class="icon"
             ><ion-icon name="chatbubble-ellipses-outline"></ion-icon
             ></span>
@@ -33,7 +33,7 @@
         </a>
         </li>
         <li>
-        <a href="#">
+        <a href="supplies.php">
             <span class="icon"
             ><ion-icon name="help-circle-outline"></ion-icon
             ></span>
@@ -41,23 +41,23 @@
         </a>
         </li>
         <li>
-        <a href="#">
+        <a href="reports.php">
             <span class="icon"
             ><ion-icon name="settings-outline"></ion-icon
             ></span>
             <span class="title">Reports</span>
         </a>
         </li>
-        <li>
+        <!-- <li>
         <a href="#">
             <span class="icon"
             ><ion-icon name="lock-closed-outline"></ion-icon
             ></span>
             <span class="title">Password</span>
         </a>
-        </li>
+        </li> -->
         <li>
-        <a href="#">
+        <a href="logout.php">
             <span class="icon"
             ><ion-icon name="log-out-outline"></ion-icon
             ></span>
