@@ -75,7 +75,7 @@
         <div class="recentorders">
           <div class="cardheader">
             <h2>Recent Orders</h2>
-            <a href="#" class="btn">View All</a>
+            <a href="order.php" class="btn">View All</a>
           </div>
           <table>
             <thead>
@@ -201,6 +201,8 @@
         </div>
       </div>
     </div>
+
+
 
     <script
       type="module"

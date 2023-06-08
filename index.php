@@ -18,10 +18,9 @@
 
 </head>
 <body>
-    <section>
+    <section class="mysection">
     <nav class="nav">
     <div>
-         
         
         <h2><i class="fas fa-cog"></i>Maiyan Laundry</h2>
     </div>
@@ -35,10 +34,10 @@
             <!--
         <div class="about">
             <ul>
-           <li><a href="#"></a>Mission</li>
-           <li><a href="#"></a>Vision</li>
-           <li><a href="#"></a>Goal</li>
-           <li><a href="#"></a>Contact Us</li>
+        <li><a href="#"></a>Mission</li>
+        <li><a href="#"></a>Vision</li>
+        <li><a href="#"></a>Goal</li>
+        <li><a href="#"></a>Contact Us</li>
         </ul>
         </div> -->
     </li>
@@ -60,6 +59,26 @@
 <!--icon for viewing menu-->
 <i class="fa fa-bars" onclick="showMenu( )"></i>
 </nav>
+
+<!-- card display -->
+<div class="modal-container">
+    <div class="modal fade show" id="formShow" tabindex="1" role="dialog" data-backdrop="static" arial-modal="true">
+        <div class="modal-dialog modal-x1 modal-dialog-centered" role="document">
+            <div class="modal-content modal-dialog-scrollable">
+                <div class="modal-header navbar-nav card-modal-header">
+                    <div>
+                        <h3 class="modal-title">Fill Out the Form</h3>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- end modal -->
 
  <!--Hero Section-->
 <div class="Hero"> 
@@ -145,6 +164,8 @@
         <input type="submit"/>
     </form>
 </div>
+
+
 <footer class="main-spacing">
     <p>Maiyan laundry 2023</p>
 </footer>
