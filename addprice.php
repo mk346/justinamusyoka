@@ -1,18 +1,22 @@
-<?php 
+<?php
 require 'config.php';
 include 'includes/form_handler/save_price.php';
 ?>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Assets/dashboard.css"/>
+    <link rel="stylesheet" href="Assets/dashboard.css" />
     <script src="https://kit.fontawesome.com/0fe3bc1f22.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>Add Service</title>
 </head>
+
 <body>
-    <?php include 'sidebar.php'?>
+    <?php include 'sidebar.php' ?>
     <div class="main">
         <h1 class="page-title">Add Item</h1>
         <hr class="line">
@@ -48,4 +52,5 @@ include 'includes/form_handler/save_price.php';
         </div>
     </div>
 </body>
+
 </html>

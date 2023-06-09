@@ -2,17 +2,29 @@
 require 'config.php';
 ?>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style>
+    <style data-styles="">
+        ion-icon {
+            visibility: hidden
+        }
+
+        .hydrated {
+            visibility: inherit
+        }
+    </style>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Assets/dashboard.css"/>
+    <link rel="stylesheet" href="Assets/dashboard.css" />
     <script src="https://kit.fontawesome.com/0fe3bc1f22.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>Clients</title>
 </head>
+
 <body>
-    <?php include 'sidebar.php'?>
+    <?php include 'sidebar.php' ?>
     <div class="main">
         <h1 class="page-title">Orders List</h1>
         <hr class="line">
@@ -40,16 +52,16 @@ require 'config.php';
                                                 $i = 0;
                                                 //fetching data from clients table
                                                 $query = $con->query("SELECT * FROM client order by clientID DESC");
-                                                while ($row = $query->fetch_assoc()):
+                                                while ($row = $query->fetch_assoc()) :
                                                 ?>
-                                                <tr>
-                                                    <td class="rbody"><?php echo $i++; ?></td>
-                                                    <td class="rbody"><?php echo ucwords($row['username']);?></td>
-                                                    <td class="rbody"><?php echo $row['phone'];?></td>
-                                                    <td class="rbody"><?php echo $row['email'];?></td>
-                                                    <td class="rbody"><?php echo ucwords($row['location']);?></td>
-                                                    <td class="rbody"><?php echo $row['type'];?></td>
-                                                </tr>
+                                                    <tr>
+                                                        <td class="rbody"><?php echo $i++; ?></td>
+                                                        <td class="rbody"><?php echo ucwords($row['username']); ?></td>
+                                                        <td class="rbody"><?php echo $row['phone']; ?></td>
+                                                        <td class="rbody"><?php echo $row['email']; ?></td>
+                                                        <td class="rbody"><?php echo ucwords($row['location']); ?></td>
+                                                        <td class="rbody"><?php echo $row['type']; ?></td>
+                                                    </tr>
                                                 <?php endwhile; ?>
                                             </tbody>
 
@@ -64,4 +76,5 @@ require 'config.php';
         </div>
     </div>
 </body>
+
 </html>
