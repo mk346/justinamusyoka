@@ -25,6 +25,15 @@
         </a>
         </li>
         <li>
+        <a href="order.php">
+            <span class="icon"
+            ><ion-icon name="logo-dropbox"></ion-icon></span>
+            <span class="title">Orders</span>
+        </a>
+        </li>
+
+        </li>
+        <li>
         <a href="pricelist.php">
             <span class="icon"
             ><ion-icon name="chatbubble-ellipses-outline"></ion-icon
