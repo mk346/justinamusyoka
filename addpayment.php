@@ -1,6 +1,6 @@
 <?php
 require 'config.php';
-include 'includes/save_payment.php';
+//include 'includes/save_payment.php';
 $client_list = "";
 $query = "SELECT * FROM client ORDER BY clientID DESC";
 $exec = mysqli_query($con, $query);
@@ -32,7 +32,7 @@ if (mysqli_num_rows($exec)) {
         <div class="container-fluid-1">
             <div class="mycol">
                 <div class="card-1 card-outline card-primary">
-                    <form action="addpayment.php" method="POST">
+                    <form action="includes/save_payment.php" method="POST">
                         <div class="row-2 padding-right">
                             <div class="form-group form-col">
                                 <label for class="control-label">Client</label>
@@ -43,7 +43,7 @@ if (mysqli_num_rows($exec)) {
                             </div>
                             <div class="form-group form-col">
                                 <label for class="control-label">Type</label>
-                                <select name="type" id="type" class="form-control" required>
+                                <select name="type" id="type" class="form-control" required onchange="showOption();">
                                     <option value="#">Select Service</option>
                                     <option value="Everyday Wear">Everyday Wear</option>
                                     <option value="Formal Wear">Formal Wear</option>
@@ -54,11 +54,11 @@ if (mysqli_num_rows($exec)) {
                             </div>
                             <div class="form-group form-col">
                                 <label for class="control-label">Amount Per Kg</label>
-                                <input type="number" name="amount" id="amount" class="form-control" required>
+                                <input type="number" name="amount" id="amount" class="form-control" disabled>
                             </div>
                             <div class="form-group form-col">
                                 <label for class="control-label">Quantity</label>
-                                <input type="text" name="quantity" class="form-control" required>
+                                <input type="number" name="quantity" class="form-control" required>
                             </div>
                             <div class="form-group form-col">
                                 <label for class="control-label">Payment</label>
@@ -88,14 +88,7 @@ if (mysqli_num_rows($exec)) {
             </div>
         </div>
     </div>
-    <script>
-        var service = document.getElementById("type")[0];
-        var amount = document.getElementById("amount");
-
-        var selected = service.selectedIndex;
-
-        console.log(selected);
-    </script>
+    <script src="Assets/js/options.js"></script>
 </body>
 
 </html>

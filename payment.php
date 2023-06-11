@@ -68,7 +68,7 @@ require 'config.php';
                                                             <a href="edit_payment.php?&edit_id=<?php echo $row['paymentID'] ?>" class="btn-main btn-edit">
                                                                 <i class="fas fa-edit"></i>
                                                             </a>
-                                                            <a href="delete_delete.php?&del_id=<?php echo $row['paymentID'] ?>" class="btn-main btn-del">
+                                                            <a href="delete_payment.php?&del_id=<?php echo $row['paymentID'] ?>" class="btn-main btn-del">
                                                                 <i class="fas fa-trash"></i>
                                                             </a>
                                                         </div>

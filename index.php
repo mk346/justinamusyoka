@@ -29,7 +29,7 @@
         <!--icon for closing the window-->
         <i class="fa fa-window-close"  onclick="hideMenu( )"></i>
     <ul>
-        <li class="active"><a href="#home"><i class="fa fa-home"></i>Home</a></li>
+        <li class="active"><a href="index.php"><i class="fa fa-home"></i>Home</a></li>
         <li><a href="About.html">About Us</a>
             <!--
         <div class="about">
@@ -60,22 +60,6 @@
 <i class="fa fa-bars" onclick="showMenu( )"></i>
 </nav>
 
-<!-- card display -->
-<div class="modal-container">
-    <div class="modal fade show" id="formShow" tabindex="1" role="dialog" data-backdrop="static" arial-modal="true">
-        <div class="modal-dialog modal-x1 modal-dialog-centered" role="document">
-            <div class="modal-content modal-dialog-scrollable">
-                <div class="modal-header navbar-nav card-modal-header">
-                    <div>
-                        <h3 class="modal-title">Fill Out the Form</h3>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
 
 
 <!-- end modal -->
@@ -86,7 +70,7 @@
     <div class="hero-description">
 <h1>Get your Laundry Done Within 24 Hours</h1>
 <p>Sorting, washing, drying, pressing and folding clothing and other textile items. </p>
-<a href="#"class="hero-btn">Place Order</a>
+<a href="placeorder.php"class="hero-btn">Place Order</a>
 
     </div>
 </div>
